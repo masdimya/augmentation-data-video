@@ -13,7 +13,7 @@ def video2frame(file_video):
         
         frame_arr.append(frame)
     
-    return frame_arr,fps
+    return np.array(frame_arr),fps
 
 def frame2video(frame_array,fps,pathOut):
     height, width, layers = frame_array[0].shape
